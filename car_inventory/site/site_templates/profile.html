@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+<div class="container text-center text-white-50 align-items-center justify-content-evenly">
+    <h1 class="display-3 fw-normal mt-5 pt-5">User Profile: {{ current_user.email}}</h1>
+    <h3 class="display-5 text-white-50 pt-5 mt-5 pb-3 mb-3">Account Information:</h3>
+    <ul class="list-unstyled">
+        <li class="fs-3">Email: {{ current_user.email }}</li><br>
+        <li class="fs-3">Token: {{ current_user.token }}</li>
+    </ul>
+    <div class="container mt-5 text-center text-white-50 align-items-center justify-content-center">
+        <img src="../../static/images/undraw_automobile_repair_ywci.svg" class="img-fluid p-5 mt-5" alt="Repairing a car">
+    </div>
+</div>
+{% endblock %}
